@@ -26723,23 +26723,52 @@
 /* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(8);
 
 	var About = function About(props) {
 	  return React.createElement(
-	    'div',
-	    null,
+	    "div",
+	    { className: "row" },
 	    React.createElement(
-	      'h3',
-	      null,
-	      'About'
+	      "h1",
+	      { className: "text-center" },
+	      "About"
 	    ),
 	    React.createElement(
-	      'p',
+	      "p",
 	      null,
-	      'Welcome to the about page'
+	      "React Weather is an app to know what is the current weather of a city. Juste use the search box, enter a city of your choice and let the app give you the info you need"
+	    ),
+	    React.createElement(
+	      "p",
+	      null,
+	      "Here are some of the tools I used:"
+	    ),
+	    React.createElement(
+	      "ul",
+	      null,
+	      React.createElement(
+	        "li",
+	        null,
+	        React.createElement(
+	          "a",
+	          { href: "https://facebook.github.io/react" },
+	          "React"
+	        )
+	      ),
+	      " - This was the Javascript framework used.",
+	      React.createElement(
+	        "li",
+	        null,
+	        React.createElement(
+	          "a",
+	          { href: "http://openweathermap.org" },
+	          "Open Weather Map"
+	        )
+	      ),
+	      " - I used open weather map to search weather data by city name."
 	    )
 	  );
 	};
